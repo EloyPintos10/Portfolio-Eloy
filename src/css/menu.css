@@ -1,0 +1,211 @@
+@media all and (max-width:756px){
+    .navbar-nav{
+        display: none;
+    }
+
+}
+
+.name_brand{
+   color: rgb(4, 134, 166);
+   font-size: 30px;
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+  
+}
+
+.name_brand:hover{
+   color: rgba(4, 134, 166, 0.7);
+  
+}
+
+.name_span{
+    color: rgba(193, 9, 110, 0.809);   
+}
+
+.bg-navbar{
+    background-image: url("https://tamalsen.dev/wp-content/uploads/2021/07/tamalsen-home-cover.jpg");
+    background-position: top;
+   
+}
+
+.div_link{
+    line-height: 1.1;
+}
+
+.link_nav{
+    color: #ffffff;    
+    font-size: 20px;   
+    
+}
+
+.link_nav:hover {
+
+    animation: text-shadow 1s ease-in forwards;
+}
+
+.text_link{
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: end;
+}
+
+
+
+/*footer*/
+
+.footer-color{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+padding: 5rem 4rem;
+color: #ffffff;
+    margin-bottom: 0;
+}
+
+
+.div-title-footer{
+    max-width: 40rem;
+}
+.title-footer{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.subtitle-footer{
+    font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal; 
+}
+
+.iconos_footer{
+    display: block;
+       
+}
+
+.iconoMsj{
+    font-size: 3rem;
+    margin-bottom:2rem;
+}
+.iconoMsj:hover{
+   color: green;
+}
+
+.iconoLk{
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+.iconoLk:hover{
+color: #ffffff;
+}
+.iconoCv{
+font-size: 3rem;
+margin-bottom: 15px;
+}
+.iconoCv:hover{
+color:rgba(193, 9, 110, 0.809);
+}
+
+
+
+.contain-perfil{
+    display: flex;
+    justify-content: space-around;
+    max-width: 40rem;
+}
+
+
+.foto-perfil{
+    width: 10rem;
+    border-radius: 50%;
+    margin-right: 15px;
+    
+}
+
+.btnCv{
+    background-color: rgba(193, 9, 110, 0.809);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    
+}
+.btnCv:hover{
+    background-color: #ffffff;
+    color: rgba(193, 9, 110, 0.809);
+   
+
+}
+.cv-link{
+    text-decoration: none;
+}
+
+.cv-link .badge-cv{
+    display: none;   
+    color:rgba(193, 9, 110, 0.809);
+    text-decoration: none;
+}
+
+.cv-link:hover .badge-cv{
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+    color:rgba(193, 9, 110, 0.809);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+
+@keyframes text-shadow{
+    0% {text-shadow: none;} 
+   50% {text-shadow: 0 0 0.2em rgb(107, 191, 240)0 0 0.2em rgb(107, 191, 240)}
+   100% {text-shadow:0 0 0.2em rgb(107, 191, 240),0 0 0.2em rgb(107, 191, 240),0 0 0.2em rgb(107, 191, 240)}
+   
+}
+
+
+@media all and (max-width:756px){
+
+    .footer-color{
+        display: grid;     
+        align-items: center;
+        text-align: center;
+   padding: 6rem 1rem;
+    }
+
+    .title-footer{    
+        font-size: 19px;
+    }
+    
+    .subtitle-footer{
+        font-family: "Roboto Mono", monospace;
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 50px;
+      font-style: normal; 
+    }
+
+
+    .contain-perfil{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+        max-width: 100%;
+    }
+
+    .div-title-footer{
+    width: 100%;
+    }
+
+  
+
+
+
+    
+}

@@ -1,0 +1,100 @@
+#section-experience{
+    background-color: rgba(16, 14, 28, 0.9);
+
+}
+
+.cart-a{
+    text-decoration: none;
+    color: rgba(193, 9, 110);
+    font-weight: 600;
+
+}
+
+.row{
+  --bs-gutter-x:0rem;
+
+
+}
+
+.contain-card{
+    width: 15rem;
+    height: fit-content;
+    margin-bottom: 3rem;
+}
+
+.card-body{
+    margin-top: 1rem;
+}
+.img-cart{   
+    object-fit: cover;
+    box-shadow: 0px 2px 1px 0px rgba(4, 4, 4, 0.4);
+}
+
+
+.title-cart{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.card:hover a{
+   color: rgb(4, 134, 166);
+    font-size: 20px;
+    text-decoration: none;
+}
+.card:hover .card-body {
+  margin-top: 0rem;
+}
+.card:hover .card-body p {
+  display: flex;
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+.card:hover .img-cart{
+ animation: subir 2s forwards;
+ object-fit: cover;
+ box-shadow: 0px 2px 1px 0px rgba(4, 4, 4, 0.4);
+}
+
+.card-body p{
+    display: none;
+ 
+}
+
+.icon-work{
+    color:#000 ;
+}
+
+@keyframes subir {
+   
+    from {      
+      transform: translateY(10%);
+     width: 14rem;   
+      border-radius: 10px;
+      object-fit: cover;
+      
+    }
+
+    to {
+      transform: translateY(-40%);
+      width: 14rem;
+      object-fit: cover;
+      border-radius: 10px;
+    }    
+    
+  }
+
+
+  @media all and (max-width:756px){
+    .contain-card{
+    width: 100%;    
+  }
+
+
+  }
+
+
+

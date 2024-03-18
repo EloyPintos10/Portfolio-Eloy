@@ -1,0 +1,149 @@
+#section-practicas {
+  background-color: rgba(16, 14, 28, 0.9);
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+.div-practicas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+
+.text-practicas {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 7rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* Tamaño del scroll */
+#global::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+ /* Estilos barra (thumb) de scroll */
+#global::-webkit-scrollbar-thumb {
+  background: rgba(193, 9, 110, 0.809); ;
+  border-radius: 4px;
+}
+
+#global::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+#global::-webkit-scrollbar-thumb:hover {
+  background: rgba(193, 9, 110, 0.7);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+#global::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+#global::-webkit-scrollbar-track:hover, 
+#global::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
+
+
+#global {
+  height: 480px;
+  width: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  display: flex; 
+  padding: 0px 0px;
+  direction:rtl;
+  text-align:left;
+}
+
+#mensaje {
+  height: auto;
+}
+
+.contain-img{
+    display: block;
+    width: 100%;
+}
+
+
+.img-practicas{
+    width: 25rem;
+    height: 12rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 15px;
+   
+}
+.img-practicas:hover{
+  animation: zoom 2s ; 
+  margin-bottom: 20px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+@media all and (max-width:756px){
+
+  .div-practicas {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .text-practicas {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  #global {
+    height: 480px;
+    width: 100%;
+   
+  }
+
+  .img-practicas{
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 15px;
+   
+}
+
+}

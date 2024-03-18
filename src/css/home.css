@@ -1,0 +1,130 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.div_total {
+  background-image: url("https://tamalsen.dev/wp-content/uploads/2021/07/tamalsen-home-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+.div_contain {
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    #020128ee 30%,
+    #01011edf 50%,
+    #151416 100%
+  );
+  opacity: 0.2;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 5rem;
+  font-weight: 600;
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: -1px 1px 0px black, -2px 2px 0px black, -3px 3px 0px black,
+    -4px 4px 0px black, -5px 5px 0px black;
+}
+
+.icon-flecha {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5rem;
+}
+
+.icon-a {
+  border: 3px solid rgba(193, 9, 110, 0.809);
+  border-radius: 25px;
+  padding: 20px 10px 20px 10px;
+  font-size: 20px;
+  color: #ffffff;
+  animation: subir-bajar 1s linear infinite;
+}
+
+.icon-a:hover {
+  animation-play-state: paused;
+}
+
+@keyframes subir-bajar {
+  0% {
+    transform: translateY(0%);
+  }
+
+  20% {
+    transform: translateY(20%);
+  }
+
+  30% {
+    transform: translateY(30%);
+  }
+  40% {
+    transform: translateY(40%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  60% {
+    transform: translateY(40%);
+  }
+  70% {
+    transform: translateY(30%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+  60% {
+    transform: translateY(10%);
+  }
+  70% {
+    transform: translateY(0%);
+  }
+}
+
+
+@media all and (max-width:756px){
+
+  .title {
+   
+    font-size: 60px;   
+    padding-top: 5rem;   
+  }
+  .subtitle {    
+    font-size:11px;
+   
+  }
+
+  .icon-a {  
+    font-size: 15px;
+ 
+  }
+
+  .icon-flecha {
+   
+    position: relative;
+    top: 3rem;
+  }
+
+
+
+}

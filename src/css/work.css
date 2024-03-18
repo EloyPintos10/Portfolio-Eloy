@@ -1,0 +1,124 @@
+
+#section-work{
+    background-color: rgba(16, 14, 28, 0.9);
+    padding-bottom: 80px;
+
+}
+
+
+.div-work{
+    display: flex;
+    justify-content: space-around;   
+
+}
+
+
+.img-cel{
+    width: 20rem;
+}
+
+
+.presentacion{
+  max-width: 40rem;
+}
+
+.skills{
+  display: block;
+  max-width: 35rem;
+}
+.text-work{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 7rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.text-work2{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-style: normal;  
+  line-height: 1.2;
+font-size: 20px;
+
+}
+.text-skill{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color:  rgba(4, 134, 166);
+  text-decoration: underline  rgba(193, 9, 110, 0.809);
+  font-style: normal;
+ margin-bottom: 3rem;
+font-size: 50px;
+
+}
+
+
+.div-skills{
+  display: flex;
+}
+
+.contain-skill{
+  display: flex;    
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-skill{
+  font-size: 40px;
+  margin: 8px 20px;
+
+}
+
+
+
+@media all and (max-width:756px){
+  .div-work{
+    display: block;
+    justify-content: space-around;   
+
+}
+
+.presentacion{
+ width: 100%;
+}
+.text-work{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.text-work2{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-style: normal;  
+  line-height: 1.2;
+font-size: 15px;
+padding: 10px;
+
+}
+.text-skill{ 
+ margin-bottom: 3rem;
+font-size: 50px;
+padding: 0px 10px;
+
+}
+
+.icon-skill{
+  font-size: 20px;
+  margin: 8px 20px;
+
+}
+
+
+.div-skills span{
+  font-size: 12px;
+}
+
+}
+
+
+
