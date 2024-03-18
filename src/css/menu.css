@@ -39,8 +39,8 @@
 }
 
 .link_nav:hover {
-
-    animation: text-shadow 1s ease-in forwards;
+color: #ffffff;
+    animation: text-shadow .5s ease-in forwards;
 }
 
 .text_link{
