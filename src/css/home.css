@@ -45,6 +45,10 @@
     -4px 4px 0px black, -5px 5px 0px black;
 }
 
+.subtitle2{
+  display: none;
+}
+
 .icon-flecha {
   display: flex;
   justify-content: center;
@@ -105,12 +109,28 @@
 @media all and (max-width:756px){
 
   .title {
-   
+  
     font-size: 60px;   
     padding-top: 5rem;   
   }
+
+  .title p{
+    margin-top: 2rem;
+  }
   .subtitle {    
-    font-size:11px;
+   display: none;
+   
+  }
+  .subtitle2 {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    text-shadow: -1px 1px 0px black, -2px 2px 0px black, -3px 3px 0px black,
+      -4px 4px 0px black, -5px 5px 0px black; 
+    font-size:22px;
+   margin-top: 2rem;
    
   }
 

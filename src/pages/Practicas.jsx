@@ -4,15 +4,17 @@ import restaurant from "../assets/restaurant-rolling.png";
 import banco from "../assets/rolling-bank.png";
 import rollingplus from "../assets/rolling+.png";
 import vikingo from "../assets/vikingo.png"
-
+import AOS from "aos";
 const Practicas = () => {
+
+  AOS.init();
   return (
     <div id="section-practicas">
       <div className="div-practicas">
-        <p className="text-practicas">
+        <p className="text-practicas"  data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="0" >
           Mis <br /> practicas
         </p>
-        <div id="global">
+        <div id="global"  data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="0">
           <div className="contain-img container">
             <div className="d-flex justify-content-end">
               <a href="https://vikingo-cerveceria.netlify.app/" target="_blank" ><img src={vikingo} alt="" className="img-practicas" /></a>

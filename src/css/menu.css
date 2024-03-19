@@ -40,7 +40,7 @@
 
 .link_nav:hover {
 color: #ffffff;
-    animation: text-shadow .5s ease-in forwards;
+    animation: text-shadow 3ms ease-in forwards;
 }
 
 .text_link{

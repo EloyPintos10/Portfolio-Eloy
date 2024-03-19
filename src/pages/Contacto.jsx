@@ -3,9 +3,13 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import AOS from "aos"
+import { BsArrowUp } from "react-icons/bs";
 import "../css/contacto.css"
 
 const Contacto = () => {
+
+  AOS.init();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,6 +28,7 @@ const Contacto = () => {
             timer: 1500,
             timerProgressBar: true,
           });
+         form.current.reset();
         },
         (error) => {
           Swal.fire({
@@ -38,7 +43,11 @@ const Contacto = () => {
     return (
         <div id='section-contacto'>
          
-             <Form className='formulario' ref={form} onSubmit={sendEmail}>
+             <Form className='formulario' ref={form} onSubmit={sendEmail}
+              data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"    
+     data-aos-offset="0">
       <Form.Group className="mb-3" controlId="formBasicEmail" >
         <Form.Label>Nombre</Form.Label>
         <Form.Control type="text" name="user_name" required />
@@ -57,7 +66,7 @@ const Contacto = () => {
     Enviar
       </Button>
         </div>   
-    </Form>
+    </Form>   
         </div>
     );
 };

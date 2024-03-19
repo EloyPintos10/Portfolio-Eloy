@@ -4,12 +4,14 @@ import Card from 'react-bootstrap/Card';
 import "../css/experience.css"
 import { FaLink } from "react-icons/fa6";
 import { Col } from 'react-bootstrap';
-
+import AOS from "aos"
 const Cart = ({item}) => {
 
+  AOS.init();
+
     return (
-      <Col lg={3} sm={1}>
-        <Card className='contain-card'>
+      <Col lg={3} sm={1} md={6} className='text-center'>
+        <Card className='contain-card' data-aos="fade-up" data-aos-duration="2000"  data-aos-offset="0">
           <div className='d-flex justify-content-center'>
         <Card.Img  src={item.imagen} className='img-cart' />      
 

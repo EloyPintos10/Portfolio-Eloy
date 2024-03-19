@@ -1,7 +1,8 @@
 #section-practicas {
-  background-color: rgba(16, 14, 28, 0.9);
+  background:linear-gradient( rgba(13, 13, 13, 0.992), rgba(15, 15, 16, 0.9));
   padding-bottom: 3rem;
   padding-top: 5rem;
+  overflow-x: hidden;
 }
 
 .div-practicas {

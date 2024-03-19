@@ -15,8 +15,9 @@ const Home = () => {
             <div className='title'>
                 <p>Eloy Pintos </p>
             </div>
-            <div className='subtitle'>
-                <p>DESARROLLADOR FRONT-END || REACT JS - REACT NATIVE</p>
+            <div className='text-center'>
+                <p className='subtitle'>DESARROLLADOR FRONT-END || REACT JS - REACT NATIVE</p>
+                <p className='subtitle2'>DESARROLLADOR FRONT-END <br /> REACT JS ||  REACT NATIVE</p>
             </div>
             <div className='icon-flecha'>
               <a href="#section-work" className='icon-a'><BsArrowDown /></a>  

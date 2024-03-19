@@ -1,5 +1,5 @@
 #section-contacto{
-    background-color: rgba(16, 14, 28, 0.9);
+    background: linear-gradient( rgba(15, 15, 16, 0.9), rgb(8, 8, 8));
     display: flex;
     justify-content: center;
     padding-top: 5rem;
@@ -38,6 +38,8 @@ width: 10rem;
 font-weight: 600;
 font-size: 20px;
 }
+
+  
 
 
 @media all and (max-width:756px){

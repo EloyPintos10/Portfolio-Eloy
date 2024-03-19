@@ -1,5 +1,10 @@
 #section-experience{
-    background-color: rgba(16, 14, 28, 0.9);
+  background: linear-gradient( rgba(19, 16, 25, 0.41),  rgba(6, 6, 6, 0.607)), url('../assets/javascript-computer-system-code-g9mbgw247b5tc5ck.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+height: 36rem;
+
+   
 
 }
 
@@ -12,9 +17,9 @@
 
 .row{
   --bs-gutter-x:0rem;
-
-
 }
+
+
 
 .contain-card{
     width: 15rem;
@@ -38,6 +43,7 @@
     font-size: 18px;
 }
 
+
 .card:hover a{
    color: rgb(4, 134, 166);
     font-size: 20px;
@@ -45,6 +51,7 @@
 }
 .card:hover .card-body {
   margin-top: 0rem;
+
 }
 .card:hover .card-body p {
   display: flex;
@@ -53,16 +60,25 @@
   font-weight: 400;
 }
 
+
+
+.card{
+  transition: all 6s cubic-bezier(1,0,0,0.5);
+}
+
 .card:hover .img-cart{
  animation: subir 2s forwards;
+ transition: all 200ms cubic-bezier(1,0,0,0.5);
  object-fit: cover;
  box-shadow: 0px 2px 1px 0px rgba(4, 4, 4, 0.4);
 }
+
 
 .card-body p{
     display: none;
  
 }
+
 
 .icon-work{
     color:#000 ;
@@ -85,12 +101,49 @@
       border-radius: 10px;
     }    
     
+  }  
+
+  @media all and (max-width:756px){
+
+    #section-experience{
+      height: fit-content;
+    }
+    .contain-card{
+    width: 100%;    
+  }
+
+  @keyframes subir {
+   
+    from {      
+      transform: translateY(10%);
+     width: 18rem;   
+      border-radius: 10px;
+      object-fit: cover;
+      
+    }
+
+    to {
+      transform: translateY(-40%);
+      width: 18rem;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }    
+    
+  }  
+
+
   }
 
 
-  @media all and (max-width:756px){
+
+  @media all and (min-width:756px) and (max-width:991px){
     .contain-card{
     width: 100%;    
+  }
+
+  .card{
+    width:20rem ;
   }
 
 

@@ -17,14 +17,19 @@ import { SiVercel } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { FaNpm } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
+
+import AOS from "aos"
 import "../css/work.css";
-import { Col, Container, Row } from "react-bootstrap";
+
 
 const Works = () => {
+
+  AOS.init();
+
   return (
     <div id="section-work">
       <div className="div-work text-light">
-        <div className="presentacion">
+        <div className="presentacion"  data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="0">
           <p className="text-work">
             Mi <br /> trabajo
           </p>
@@ -39,7 +44,7 @@ const Works = () => {
         <div className="mt-5 skills">
           <p className="text-skill">SKILLS</p>
 
-          <div className="div-skills">
+          <div className="div-skills" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="0">
             <div className="contain-skill">
               <TiHtml5 className="icon-skill" />
               <span>HTML 5</span>
@@ -65,7 +70,7 @@ const Works = () => {
                 <span>Node JS</span>
               </div>
             </div>
-            <div className="div-skills">
+            <div className="div-skills" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="0">
               <div className="contain-skill">
                 <SiExpo className="icon-skill" />
                 <span>Expo</span>
@@ -93,7 +98,7 @@ const Works = () => {
              
             </div>
 
-            <div className="div-skills">
+            <div className="div-skills" data-aos="fade-up-left" data-aos-duration="2000" data-aos-offset="0">
               <div className="contain-skill">
                 <SiExpress className="icon-skill" />
                 <span>Express JS</span>
@@ -121,7 +126,7 @@ const Works = () => {
             </div>
           
         </div>
-      </div>
+      </div>     
     </div>
   );
 };

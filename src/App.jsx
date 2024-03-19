@@ -15,7 +15,7 @@ function App() {
    <Works></Works>
    <Experience></Experience>
    <Practicas></Practicas>
-   <Contacto></Contacto>
+   <Contacto></Contacto>    
    <Footer></Footer>
     </>
   )
